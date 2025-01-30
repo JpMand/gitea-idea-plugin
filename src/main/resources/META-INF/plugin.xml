@@ -46,4 +46,12 @@ New feature coming soon:
         <listener class="com.github.leondevlifelog.gitea.listeners.GiteaActivationListener"
             topic="com.intellij.openapi.application.ApplicationActivationListener" />
     </applicationListeners>
+    <actions>
+        <action id="com.github.leondevlifelog.gitea.tasks.com.github.leondevlifelog.gitea.actions.OpenRepositoryLineAction"
+                class="com.github.leondevlifelog.gitea.tasks.com.github.leondevlifelog.gitea.actions.OpenRepositoryLineAction"
+                text="Open Code in Repository" description="Open Gitea Repository at given code line"
+                icon="com.github.leondevlifelog.gitea.icons.GiteaIcons.Gitea">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
 </idea-plugin>
